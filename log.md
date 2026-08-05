@@ -10,6 +10,11 @@ timestamp: 2026-08-04T00:00:00Z
 
 Newest first.
 
+- **2026-08-04** — Added [Designing an agent crew](ai/crew-design.md) (the
+  derivation procedure from goal to roster) and extended
+  [spec / design workflow](spec-workflow.md) with the anatomy of a spec and its
+  quality tests — both distilled from applying the family's own rules to a real
+  multi-agent review run.
 - **2026-08-04** — Recorded the Working with AI pre-publication review in the
   [appendix](appendix.md) (twenty candidate gaps: one merged, one reinstated,
   eighteen deliberately excluded, with method caveats), documented the

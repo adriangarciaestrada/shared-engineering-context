@@ -35,6 +35,7 @@ below is a self-contained concept; follow the graph from any entry point.
 ## Working with AI
 - [Working with AI (index)](ai/index.md) — entry point and provenance for this family.
 - [Scoping AI systems](ai/scoping.md) — the deliverable over the pipeline; minimal sufficient mechanism.
+- [Designing an agent crew](ai/crew-design.md) — the derivation procedure from goal to agent roster.
 - [AI output contracts](ai/output-contracts.md) — typed I/O, forced structure, translation layers.
 - [Grounding & context](ai/grounding.md) — single source of truth; context is the first suspect.
 - [Validating AI output](ai/validation.md) — Generate → Evaluate → Refine; deterministic checks first.

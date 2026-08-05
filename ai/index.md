@@ -16,6 +16,7 @@ practices; rules that are house practice rather than course material are marked
 by their cross-links into the rest of this bundle.
 
 - [Scoping AI systems](scoping.md) — when AI earns its place, and how much of it.
+- [Designing an agent crew](crew-design.md) — from goal to roster: derive, group, prune, contract.
 - [AI output contracts](output-contracts.md) — schemas, typed I/O, forced structure.
 - [Grounding & context](grounding.md) — feeding agents the right source of truth.
 - [Validating AI output](validation.md) — the Generate → Evaluate → Refine loop and its gates.
