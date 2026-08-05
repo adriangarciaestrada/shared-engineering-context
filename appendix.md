@@ -83,3 +83,21 @@ do not re-derive the same candidates:
 > not a calibrated measurement; the headline coverage figure (164/192 claims
 > covered) is an unaudited single-rater count. One refutation in twenty was
 > overturned on spot-check.
+
+### Follow-up session review (2026-08-04, second half of the GER session)
+
+A later pass over the remainder of the source session confirmed three gaps —
+all one blind spot: the refine step lacked a contract (payload, fix scope, pass
+limit), now specified in [failure handling](ai/failure-handling.md) — and
+refuted four candidates:
+
+- **"Speed over perfection" as a Generate-stage principle** — the substance is
+  overgenerate-and-filter, already present and deliberately cost-conditioned.
+- **Broken output as expected loop input** — the bundle's refine loop already
+  presupposes defective output; "stop the pipeline" governs downstream import,
+  not the loop's existence.
+- **Randomness without constraints produces space, not experience** — literal
+  in the AI-contract rule; the residue is domain detail.
+- **Credible variety needs underlying domain rules** — covered by the
+  conjunction of the AI-contract and grounding rules; overlaps the previous
+  candidate.

@@ -10,6 +10,13 @@ timestamp: 2026-08-04T00:00:00Z
 
 Newest first.
 
+- **2026-08-04** — Contracted the refine step in
+  [failure handling](ai/failure-handling.md) from a follow-up session of the
+  source course: the refine payload (original output + specific error), fix
+  scoped to the documented failure, and a declared pass limit with escalation
+  by problem statement. Verified against the bundle and raw slides before
+  inclusion; four sibling candidates refuted as already covered (recorded in
+  the [appendix](appendix.md)).
 - **2026-08-04** — Added [Designing an agent crew](ai/crew-design.md) (the
   derivation procedure from goal to roster) and extended
   [spec / design workflow](spec-workflow.md) with the anatomy of a spec and its

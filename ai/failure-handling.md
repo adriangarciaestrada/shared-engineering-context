@@ -24,8 +24,18 @@ timestamp: 2026-08-04T00:00:00Z
   what the LLM stage was added to handle.
 - **Record failures, not just successes.** Failed attempts, errors, and dead ends
   are part of the agent's state, kept so they are not repeated.
-- **Close the loop with error feedback.** Return the detected error to the agent
-  that produced it for a corrected pass; escalate to a human when it persists.
+- **Close the loop with error feedback.** The refine payload is the original
+  output plus the specific error and the criterion it failed — so the agent
+  fixes that exact issue instead of regenerating from scratch.
+- **Scope the fix to the documented failure.** A refine pass touches only the
+  reported issue; guessed, unrelated changes from a refining agent are silent
+  regressions waiting to be found.
+- **Declare a pass limit before the loop runs.** Refinement gets a fixed number
+  of attempts; when they are exhausted, the agent stops and escalates with a
+  clear problem statement — what failed, what was tried, why it did not
+  resolve. The limit is the failure bound; the success criterion remains the
+  quality threshold in [validation](validation.md), and the attempts are paid
+  for by the declared [token budget](cost-budgeting.md).
 - **When a human debugs with an LLM's help**, follow the protocol: (1) describe
   the problem specifically, not "it doesn't work"; (2) paste the literal error;
   (3) have it read the official docs; (4) verify its answer ("where in the
