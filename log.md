@@ -3,13 +3,21 @@ type: Index
 title: Change log
 description: Chronological history of changes to this OKF bundle.
 tags: [changelog, history]
-timestamp: 2026-08-04T00:00:00Z
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Change log
 
 Newest first.
 
+- **2026-08-05** — Corrected the PR-title rule in
+  [tickets & traceability](tickets/traceability.md) and the
+  [don'ts](donts.md): the previous text prescribed a single layout and claimed the
+  watchdog blocks a parenthesised key, contradicted by merged PRs across the org
+  using three different layouts. The one-key-per-title invariant is kept; the
+  layout is now declared repository-local. Also removed stack-bound residue from
+  [code quality](code-quality.md) (a language-specific linter flag and idiom
+  example) that the bundle's own scope rule excludes.
 - **2026-08-04** — Contracted the refine step in
   [failure handling](ai/failure-handling.md) from a follow-up session of the
   source course: the refine payload (original output + specific error), fix

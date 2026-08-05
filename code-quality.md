@@ -3,7 +3,7 @@ type: Engineering Convention
 title: Code quality & pre-completion checks
 description: Run the full check suite before done; zero warnings; tests and edge cases against the real schema.
 tags: [quality, tests, typecheck, lint]
-timestamp: 2026-07-07T00:00:00Z
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Code quality & pre-completion checks
@@ -11,10 +11,12 @@ timestamp: 2026-07-07T00:00:00Z
 - **Run the full check suite at the end of every task** before considering it done —
   typically tests + build + typecheck (and formatter + linter for compiled languages).
 - **Zero warnings and zero type errors before committing.** Treat linter warnings as
-  errors (`-D warnings`).
+  errors — enable the linter's deny/strict mode so a warning fails the build rather
+  than scrolling past in the log.
 - **Always run the formatter before committing** to avoid CI failures.
 - **Remove unused imports, variables, and dead code.** Keep imports organized.
-- Use modern language idioms (e.g. inline format-string interpolation).
+- **Follow the language's current idioms** rather than legacy forms, and where the
+  linter can enforce one, enable that rule instead of relying on review to catch it.
 - **All tests must pass.** Fix or remove broken test files — never leave them.
 - **Cover the edge cases explicitly** and validate against the real schema/contract,
   not a hand-rolled copy: valid input, malformed/partial, empty collections, `null`

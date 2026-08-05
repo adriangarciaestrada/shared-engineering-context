@@ -3,15 +3,16 @@ type: Engineering Convention
 title: Don'ts (consolidated)
 description: The consolidated "what not to do" list, cross-cutting every other concept.
 tags: [donts, antipatterns]
-timestamp: 2026-08-04T00:00:00Z
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Don'ts (consolidated)
 
 - **Don't commit to `main`** — always branch first.
 - **Don't commit secrets, local state, caches, or build output** — gitignore them.
-- **Don't open a PR without a Jira key**, and don't wrap the key in parentheses/brackets,
-  and don't put more than one key in the title.
+- **Don't open a PR without a Jira key**, and don't put more than one key in the
+  title. **Don't assume one repository's title layout applies to another** — check
+  the target repository's merged PRs.
 - **Don't leave warnings, type errors, unused imports, or broken tests** behind.
 - **Don't pre-seed config with guessed values** — recover real values from a source of
   truth, not from screenshots or assumptions.
