@@ -38,6 +38,9 @@ timestamp: 2026-08-04T00:00:00Z
 - **Version prompts, pipelines, and docs as code**, and keep architecture diagrams
   as code (e.g. Mermaid) — diffable, and they expose bottlenecks and circular
   dependencies early.
+- **Run agent components in reproducible environments.** The house rule against
+  host-installed, unpinned tooling applies to agent pipelines too — see
+  [local development & containers](../local-containers.md).
 - **Escalate to humans what agents cannot verify.** Route to a human any question
   whose answer depends on subjective usefulness, clarity, or taste rather than on
   facts verifiable from the repo or docs — and name the specific question that
