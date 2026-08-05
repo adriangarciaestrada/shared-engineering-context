@@ -21,8 +21,10 @@ timestamp: 2026-08-04T00:00:00Z
   affects correctness, or where a wrong answer has a named downstream cost
   (rollback, re-review, incident) exceeding the token-cost difference. State
   which condition applies; choosing wrong wastes budget or quality.
-- **Iterate on a cheap model, run production on the strong one** — and mirror
-  production parameters when measuring, or the eval measures a different system.
+- **Iterate on a cheap model, run production on the strong one.** The
+  development loop pays exploration prices; production pays for quality.
+- **Mirror production parameters when measuring.** An eval run with different
+  models, budgets, or parameters than production measures a different system.
 - **Treat inter-agent communication as a cost variable.** Design what context each
   handoff carries; redundant context is paid for on every call.
 - **Gate downstream work on dependencies.** An agent does not start until its

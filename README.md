@@ -15,6 +15,9 @@ can traverse. No SDK or runtime is required to produce or consume it.
 
 - Start at [`index.md`](index.md) for progressive disclosure of every concept.
 - Change history lives in [`log.md`](log.md).
+- Standalone concepts live at the repository root; when a theme splits into
+  several sibling concepts (e.g. `git/`, `tickets/`, `ai/`), they share a folder
+  with an `index.md` navigation node of their own.
 
 ### Concept types used in this bundle
 

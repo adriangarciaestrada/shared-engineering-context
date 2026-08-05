@@ -23,8 +23,9 @@ timestamp: 2026-08-04T00:00:00Z
 - **Use structured messages between agents.** Schema-checked handoffs prevent
   context from being silently misread or dropped; isolate payloads to avoid
   cross-contaminating shared state.
-- **Set hard constraints early.** State what the agent must never do (files not to
-  touch, actions not to take) before the first run.
+- **Set hard constraints early.** The contract covers not only what the agent
+  produces but what it must never do (files not to touch, actions not to take) —
+  declared before the first run.
 - **Use structured output as a vagueness detector.** If an agent cannot produce a
   structured spec from a description, the description is too vague to build from.
 - **Carry validation metadata in the output** (e.g. a `verified` flag) so it is

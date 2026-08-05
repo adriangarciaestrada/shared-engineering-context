@@ -28,9 +28,10 @@ timestamp: 2026-08-04T00:00:00Z
   measures something different. Define the quality threshold that ends the refine
   loop — work stops when the criterion is met, not when the agent runs out of
   attempts.
-- **Overgenerate and filter — when the filter is cheap.** Producing N variants and
-  keeping the top k controls quality at scale, but multiplies generation cost by
-  N: use it only when the filter criterion is deterministic or cheap, with N
+- **Overgenerate and filter — when the filter is cheap.** Producing several
+  variants and keeping the best (e.g. generate five, keep the top one or two)
+  controls quality at scale, but multiplies generation cost by the variant count:
+  use it only when the filter criterion is deterministic or cheap, with the count
   bounded by the declared [token budget](cost-budgeting.md).
 - **Scale the review roster to the cost of the error.** The baseline gate is one
   independent evaluator. Adversarial critics (a second agent hunting

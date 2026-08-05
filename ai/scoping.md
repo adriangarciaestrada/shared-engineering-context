@@ -10,7 +10,8 @@ timestamp: 2026-08-04T00:00:00Z
 
 - **The deliverable outranks the pipeline.** Judge AI work by what it ships, not by
   how elaborate the agent architecture is — a sophisticated pipeline that delivers
-  nothing is a failure.
+  nothing is a failure. The check: progress is measured by what a user can already
+  touch, not by what the pipeline can do.
 - **Use the minimal sufficient mechanism.** Escalate script → rules/heuristics → LLM;
   each step buys generalization at the price of cost and non-determinism. The test:
   before adding an LLM, write down the finite list of input cases a script/rules
@@ -38,7 +39,8 @@ timestamp: 2026-08-04T00:00:00Z
   [validation](validation.md).)
 - **Decompose into atomic tasks** — the smallest independently solvable units —
   before any agent acts, and pick the orchestration model deliberately: sequential
-  is predictable but cascades bottlenecks; hierarchical delegation adds parallelism
+  (each task finishes before the next starts) is predictable but cascades
+  bottlenecks; hierarchical (a coordinator delegating to workers) adds parallelism
   and complexity.
 - **Prefer minimal transparent orchestration over frameworks.** Adopt a framework
   only once the hand-rolled orchestrator needs at least two of: retries with

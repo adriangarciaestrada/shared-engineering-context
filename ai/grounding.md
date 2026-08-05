@@ -24,7 +24,8 @@ timestamp: 2026-08-04T00:00:00Z
   are inherited automatically. (This bundle is itself such a source.)
 - **Read state before writing.** Agents parse what exists before modifying it.
 - **Perception determines action.** What the agent sees conditions what it decides —
-  when behavior looks wrong, audit the provided context first.
+  when behavior looks wrong, audit the provided context first, before rewriting
+  prompts or switching models.
 - **Manage memory proactively in long sessions.** Compress resolved work into
   summaries that preserve key decisions; archive closed items out of active
   context, retrievable on demand.

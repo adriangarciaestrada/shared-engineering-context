@@ -34,10 +34,13 @@ timestamp: 2026-08-04T00:00:00Z
   (prompts can embed whatever the agent read — see [secrets](../secrets.md)). If
   the agent's decisions cannot be explained, nobody was in control of them.
 - **Keep agent memory in plain, editable text** (markdown): durable, auditable
-  state a human can read, correct, and feed back. Avoid opaque infrastructure.
-- **Version prompts, pipelines, and docs as code**, and keep architecture diagrams
-  as code (e.g. Mermaid) — diffable, and they expose bottlenecks and circular
-  dependencies early.
+  state a human can read, correct, and feed back. Avoid opaque infrastructure —
+  any state store a human cannot open, read, and edit as plain text (embedded
+  databases, external memory services).
+- **Version prompts and pipeline definitions as code** — they change behavior
+  exactly like code does, so they get the same history, review, and rollback.
+- **Keep architecture diagrams as code** (e.g. Mermaid): diffable next to the
+  source, and they expose bottlenecks and circular dependencies early.
 - **Run agent components in reproducible environments.** The house rule against
   host-installed, unpinned tooling applies to agent pipelines too — see
   [local development & containers](../local-containers.md).

@@ -10,6 +10,12 @@ timestamp: 2026-08-04T00:00:00Z
 
 Newest first.
 
+- **2026-08-04** — Recorded the Working with AI pre-publication review in the
+  [appendix](appendix.md) (twenty candidate gaps: one merged, one reinstated,
+  eighteen deliberately excluded, with method caveats), documented the
+  root-vs-folder structure rule in the README, and applied the review panel's
+  minor editorial findings across the family (definitions, split bullets,
+  checkable phrasings).
 - **2026-08-04** — Added the [Working with AI](ai/index.md) concept family:
   scoping, output contracts, grounding & context, validation
   (Generate → Evaluate → Refine), human oversight & observability, failure
