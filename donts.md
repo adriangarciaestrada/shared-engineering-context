@@ -3,7 +3,7 @@ type: Engineering Convention
 title: Don'ts (consolidated)
 description: The consolidated "what not to do" list, cross-cutting every other concept.
 tags: [donts, antipatterns]
-timestamp: 2026-07-07T00:00:00Z
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Don'ts (consolidated)
@@ -27,3 +27,11 @@ timestamp: 2026-07-07T00:00:00Z
 - **Don't merge without required CI checks and branch protection passing.**
 - **Don't hardcode domain-specific values** (topics, titles, categories, authors)
   that should come from config/profile — they break the moment the domain changes.
+- **Don't use agent output without validation and review** — automated schema checks
+  first, human judgment before import; schema-valid is not the same as good.
+- **Don't let malformed LLM output reach a downstream system** — parse defensively
+  and stop the pipeline on failure.
+- **Don't blind-retry a failed generation** — diagnose whether the prompt, schema,
+  or data was at fault, then regenerate deliberately.
+- **Don't define an agent by "vibe"** — without a concrete output schema there is
+  nothing to verify it against.

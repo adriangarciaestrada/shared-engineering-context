@@ -3,7 +3,7 @@ type: Index
 title: Shared Engineering Context
 description: Root navigation for the project-agnostic engineering knowledge bundle.
 tags: [engineering, conventions, index]
-timestamp: 2026-07-07T00:00:00Z
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Shared Engineering Context
@@ -31,6 +31,17 @@ below is a self-contained concept; follow the graph from any entry point.
 - [Repo structure & documentation](repo-structure.md) — `CLAUDE.md`, `SECURITY.md`, hygiene.
 - [Writing conventions](writing-conventions.md) — English, impersonal.
 - [Spec / design workflow](spec-workflow.md) — OpenSpec lifecycle, acceptance criteria.
+
+## Working with AI
+- [Working with AI (index)](ai/index.md) — entry point and provenance for this family.
+- [Scoping AI systems](ai/scoping.md) — the deliverable over the pipeline; minimal sufficient mechanism.
+- [AI output contracts](ai/output-contracts.md) — typed I/O, forced structure, translation layers.
+- [Grounding & context](ai/grounding.md) — single source of truth; context is the first suspect.
+- [Validating AI output](ai/validation.md) — Generate → Evaluate → Refine; deterministic checks first.
+- [Human oversight & observability](ai/human-oversight.md) — review against intent; reasoning logged.
+- [AI failure handling](ai/failure-handling.md) — diagnose before retry; raw audit trails.
+- [AI cost budgeting](ai/cost-budgeting.md) — token budgets as a design input.
+- [Goal-oriented agent work](ai/goal-oriented-work.md) — specs, gap analysis, stop conditions.
 
 ## Consolidated
 - [Don'ts](donts.md) — the consolidated "what not to do" list.
